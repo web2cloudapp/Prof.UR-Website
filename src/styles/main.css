@@ -1,0 +1,467 @@
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fbfbfb;
+}
+
+a {
+  color: #3e6377;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+/* Layout */
+#app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header */
+header {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.site-title {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.site-title a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Main Content */
+main {
+  padding-top: 20px;
+}
+
+/* Navigation */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.nav-menu li {
+  margin-left: 20px;
+}
+
+.nav-menu a {
+  padding: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: #3e6377;
+  border-bottom: 2px solid #3e6377;
+  text-decoration: none;
+}
+
+/* Profile Section */
+.profile {
+  padding: 40px 0 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.profile-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.profile-image {
+  flex: 0 0 300px;
+}
+
+.profile-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border: 1px solid #eee;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.designation {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.profile-info p {
+  margin-bottom: 8px;
+}
+
+.scholar-link {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Biography Section */
+.biography {
+  padding: 20px 0 40px;
+}
+
+.biography p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+.biography h2 {
+  font-size: 24px;
+  color: #3e6377;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* Academic Profiles Section */
+.academic-profiles {
+  padding: 20px 0 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.academic-profiles h2 {
+  font-size: 24px;
+  color: #3e6377;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.profiles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.profile-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  border-left: 3px solid #3e6377;
+}
+
+.profile-item h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.profile-item p {
+  margin-bottom: 0;
+}
+
+.cv-link {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #3e6377;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.cv-link:hover {
+  background-color: #2d4a59;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+}
+
+/* Content Section Styles */
+.content-section {
+  padding: 40px 0 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.content-section h2:first-child {
+  margin-top: 0;
+}
+
+.content-section h2 {
+  font-size: 24px;
+  color: #3e6377;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.content-section h3 {
+  font-size: 18px;
+  color: #444;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.content-section ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.content-section ul li {
+  margin-bottom: 10px;
+}
+
+/* Research Page Styles */
+.research-list,
+.collaboration-list {
+  list-style-type: disc;
+  margin-left: 25px;
+}
+
+.project {
+  margin-bottom: 25px;
+}
+
+.project h3 {
+  color: #555;
+  font-weight: 600;
+}
+
+/* Publications Page Styles */
+.publication-list {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.publication-list li {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.publication-title {
+  font-weight: 600;
+  color: #333;
+}
+
+.publication-authors {
+  font-style: italic;
+  color: #666;
+}
+
+.publication-journal {
+  color: #888;
+}
+
+/* CV Page Styles */
+.details-list,
+.education-list,
+.experience-list,
+.membership-list,
+.admin-list {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.degree, .position {
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.institution {
+  font-style: italic;
+  margin-bottom: 2px;
+}
+
+.year, .duration {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.education-list li,
+.experience-list li {
+  margin-bottom: 20px;
+}
+
+/* PhD Supervision Styles */
+.student-list,
+.graduate-list {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.student-name,
+.student-name {
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.research-topic {
+  font-style: italic;
+  margin-bottom: 2px;
+}
+
+.enrollment-year,
+.graduation-year,
+.current-position {
+  color: #666;
+}
+
+.student-list li,
+.graduate-list li {
+  margin-bottom: 20px;
+}
+
+.prospective-info {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.research-areas {
+  margin: 15px 0 15px 25px;
+}
+
+/* Awards Page Styles */
+.award-list,
+.grant-list,
+.recognition-list {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.award-title,
+.grant-title,
+.recognition-title {
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.award-org,
+.grant-org,
+.recognition-detail {
+  font-style: italic;
+  margin-bottom: 2px;
+}
+
+.award-year,
+.grant-year,
+.recognition-year {
+  color: #666;
+}
+
+.award-list li,
+.grant-list li,
+.recognition-list li {
+  margin-bottom: 20px;
+}
+
+/* Contact Page Styles */
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.location-map {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-detail {
+  margin-bottom: 25px;
+}
+
+.contact-detail h3 {
+  color: #3e6377;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.interest-list {
+  margin-left: 20px;
+}
+
+.map-placeholder {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu {
+    margin-top: 15px;
+    flex-direction: column;
+  }
+
+  .nav-menu li {
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+
+  .profile-content,
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .profile-image {
+    margin-bottom: 20px;
+  }
+}
